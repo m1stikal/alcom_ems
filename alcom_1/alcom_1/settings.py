@@ -55,7 +55,7 @@ ROOT_URLCONF = 'alcom_1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['home/servadmin/django-clean/alcom_1/templates',
+        'DIRS': ['/alcom_1/templates',
                 ],
         'APP_DIRS': True,
         'OPTIONS': {
