@@ -14,7 +14,7 @@ def hello(request):
     return HttpResponse(html)
 
 def login(request):
-    t = get_template('winems\WinEMS\login.htm')
+    t = get_template('winems/WinEMS/login.htm')
     html = t.render()
     return HttpResponse(html)
 
