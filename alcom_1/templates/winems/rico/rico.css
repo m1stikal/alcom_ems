@@ -1,0 +1,91 @@
+body {xbackground-color:linen;}
+
+.accordionTabTitleBar {
+	font-variant: small-caps; BORDER-RIGHT: 0px; PADDING-RIGHT: 6px; BORDER-TOP: #bdc7e7 1px solid; PADDING-LEFT: 6px; FONT-SIZE: 12px; PADDING-BOTTOM: 4px; BORDER-LEFT: 0px; PADDING-TOP: 4px; BORDER-BOTTOM: #182052 1px solid
+}
+
+.accordionTabTitleBarHover {
+	FONT-SIZE: 11px; COLOR: #000000;
+}
+.accordionTabContentBox {
+	overflow:auto; BORDER-RIGHT: #1f669b 1px solid; PADDING-RIGHT: 8px; BORDER-TOP: #1f669b 0px solid; PADDING-LEFT: 8px; FONT-SIZE: 11px; 
+	PADDING-BOTTOM: 0px; BORDER-LEFT: #1f669b 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #1f669b 1px solid; 
+	BACKGROUND-COLOR: #FFFFCC;
+}
+.contentHeader				   		{ font-family: arial; FONT-SIZE: 100%; FONT-WEIGHT: bold; margin-left:2px; padding-top:2px}
+.contentTable				   		{ font-family: arial; FONT-SIZE: 100%; FONT-WEIGHT: bold; margin-left:2px; margin-top:2px}
+.contentTable DIV			   		{ padding:2px }
+.accordionTabcontentBox INPUT  		{ font-family: arial; FONT-SIZE: 90%}
+.accordionTabcontentBox SELECT 		{ font-family: arial; FONT-SIZE: 90%}
+.accordionTabcontentBox OPTION 		{ font-family: arial; FONT-SIZE: 90%}
+.accordionTabcontentBox TEXTAREA 	{ font-family: arial; FONT-SIZE: 100%}
+.accordionTabcontentBox TH 	   		{ font-family: arial; FONT-SIZE: 70%; FONT-WEIGHT: bold}
+.accordionTabcontentBox TD     		{ font-family: arial; FONT-SIZE: 70%; FONT-WEIGHT: bold}
+.inputLabel				     		{ font-family: arial; FONT-SIZE: 100%; FONT-WEIGHT: bold}
+.columnList		{ height:100%;width:15em;float:left;border:1px solid black;}
+.columnList ul  { list-style:none;margin: 2px; padding: 2px;}
+
+.colTable td	{ border:1px solid black }
+
+.listTitle		{ font-family: arial; FONT-SIZE: 100%; FONT-WEIGHT: bold}
+.ckControl		{ vertical-align: bottom; padding:0px; margin-bottom:-1px;}
+.ckInputTiny	{ font-family: arial; FONT-SIZE: 90%; vertical-align: bottom; padding:0px; margin-bottom:-4px; height:15px; width:20px; xBORDER: solid thin black}
+.ckInputMedium	{ font-family: arial; FONT-SIZE: 90%; vertical-align: bottom; padding:0px; margin-bottom:-4px; height:15px; width:100px; xBORDER: solid thin black}
+.ckInputWide	{ font-family: arial; FONT-SIZE: 90%; vertical-align: bottom; padding:0px; margin-bottom:-4px; height:15px; width:300px; xBORDER: solid thin black}
+.ckLabel 		{ font-family: arial; FONT-SIZE: 90%; FONT-WEIGHT: bold; padding-right:5px; vertical-align: bottom; padding-top:0px; padding-bottom:0px; xBORDER: solid thin black}
+.ckBox 			{ width: 12px; height: 12px; xBORDER: solid thin black; ; BACKGROUND-COLOR: AliceBlue }
+.wideInput 		{ width: 200px; BACKGROUND-COLOR: AliceBlue }
+.widiumInput    { width: 150px; BACKGROUND-COLOR: AliceBlue }
+.mediumInput 	{ width: 100px; BACKGROUND-COLOR: AliceBlue }
+.narrowInput 	{ width: 50px; BACKGROUND-COLOR: AliceBlue  }
+.tinyInput 		{ width: 30px; BACKGROUND-COLOR: AliceBlue  }
+.fullArea		{ width: 100%; BACKGROUND-COLOR: AliceBlue  }
+INPUT 			{ width: 100px; BACKGROUND-COLOR: AliceBlue }
+INPUT.date 		{ width: 70px; BACKGROUND-COLOR: AliceBlue  }
+SELECT			{ BACKGROUND-COLOR: AliceBlue }
+OPTGROUP		{ font-family: verdana; FONT-SIZE: 10pt; FONT-WEIGHT: 900}
+
+.hrefButton		{ font-family: arial; FONT-SIZE: 90%; FONT-WEIGHT: normal;}
+
+.harry { color:#1f669b; color:#FFFFCC;}
+
+.clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+a.button {
+    background: /*transparent*/ url('bg_button_a.gif') no-repeat scroll top right;
+/*    color: #444; */
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+	margin-top: 2px;
+    margin-right: 3px; /* 6px; */
+    padding-right: 8px; /* 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.button span {
+    background: transparent url('bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 6px;
+} 
+
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 6px; /* push text down 1px */
+} 
+
+input.languagebutton {
+	background-color: linen;
+	width: 60px;
+}

@@ -1,0 +1,87 @@
+.statusContainer {
+	BACKGROUND-COLOR: #ffd363
+}
+SPAN.statusMsg {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; MARGIN: 2px 6px; FONT-FAMILY: Tahoma
+}
+SPAN.code {
+	FONT-SIZE: 11px; COLOR: #4b4b4b; FONT-FAMILY: fixed
+}
+SPAN.codeTitle {
+	FONT-SIZE: 12px; FONT-FAMILY: Courier
+}
+SPAN.code2 {
+	FONT-SIZE: 11px; MARGIN: 12px; FONT-FAMILY: Courier
+}
+SPAN.code3 {
+	DISPLAY: block; PADDING-LEFT: 12px; FONT-SIZE: 11px; FONT-FAMILY: Courier
+}
+SPAN.bigTitle {
+	FONT-SIZE: 14px; FONT-FAMILY: Arial
+}
+DIV.title {
+	FONT-SIZE: 10px; MARGIN: 1px; WIDTH: 200px; COLOR: #ffffff; FONT-FAMILY: Arial; BACKGROUND-COLOR: #797979
+}
+SPAN.title {
+	FONT-SIZE: 12px; MARGIN: 1px; FONT-FAMILY: Arial
+}
+SPAN.catHeader {
+	MARGIN-TOP: 12px; DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 11px; MARGIN-LEFT: 8px; COLOR: #5b5b5b; FONT-FAMILY: Arial
+}
+.linkBox {
+	FONT-SIZE: 11px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; FONT-FAMILY: Trebuchet MS, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #cdd7b5
+}
+.listBox {
+	BORDER-RIGHT: #8b8b8b 1px solid; BORDER-TOP: #8b8b8b 1px solid; PADDING-BOTTOM: 5px; BORDER-LEFT: #8b8b8b 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #8b8b8b 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.logBox {
+	BORDER-RIGHT: #8b8b8b 1px solid; BORDER-TOP: #8b8b8b 1px solid; PADDING-BOTTOM: 5px; BORDER-LEFT: #8b8b8b 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #8b8b8b 1px solid; BACKGROUND-COLOR: #ffffee
+}
+.codeBox {
+	PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #e0ddb5
+}
+.links {
+	FONT-SIZE: 10px; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.customDraggable {
+	BORDER-RIGHT: #5b5b5b 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #5b5b5b 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 1px; BORDER-LEFT: #5b5b5b 1px solid; COLOR: #5b5b5b; PADDING-TOP: 1px; BORDER-BOTTOM: #5b5b5b 1px solid; BACKGROUND-COLOR: #e0ddb5; moz-opacity: 0.7
+}
+.formPanel {
+	WIDTH: 150px; BACKGROUND-COLOR: #cdd7b5
+}
+DIV.explain-text {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; FONT-SIZE: 14px; PADDING-BOTTOM: 8px; WIDTH: 550px; PADDING-TOP: 8px; FONT-FAMILY: Arial
+}
+SPAN.label {
+	FONT-SIZE: 13px; FONT-FAMILY: Arial
+}
+#colorBox {
+	HEIGHT: 5px
+}
+INPUT.field {
+	BORDER-RIGHT: #cedbc1 1px solid; BORDER-TOP: #ffffff 0px solid; BORDER-LEFT: #8b8b8b 0px solid; BORDER-BOTTOM: #cedbc1 1px solid; BACKGROUND-COLOR: #eef1e5; TEXT-ALIGN: right
+}
+DIV.box {
+	BORDER-RIGHT: #6b6b6b 1px solid; FONT-SIZE: 14px; WIDTH: 100px; BORDER-BOTTOM: #6b6b6b 1px solid; FONT-FAMILY: Arial; HEIGHT: 40px; TEXT-ALIGN: center
+}
+DIV.panel {
+	BORDER-RIGHT: #5b5b5b 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #5b5b5b 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #5b5b5b 1px solid; WIDTH: 200px; PADDING-TOP: 2px; BORDER-BOTTOM: #5b5b5b 1px solid; HEIGHT: 80px
+}
+DIV.explanation {
+	FONT-SIZE: 12px; WIDTH: 600px; FONT-FAMILY: Arial; BACKGROUND-COLOR: #cdd7b5
+}
+SPAN.logMsg {
+	DISPLAY: block; FONT-SIZE: 10px; FONT-FAMILY: Verdana
+}
+DIV.cornerSamples {
+	MARGIN-TOP: 4px; FONT-SIZE: 11px; WIDTH: 440px; FONT-FAMILY: Arial; BACKGROUND-COLOR: #ffffee; TEXT-ALIGN: left
+}
+DIV.sizeMe {
+	FONT-SIZE: 11px; PADDING-BOTTOM: 5px; WIDTH: 120px; PADDING-TOP: 5px; FONT-FAMILY: Arial; BACKGROUND-COLOR: #c6c3de; TEXT-ALIGN: center
+}
+SPAN.nameSpan {
+	FONT-SIZE: 11px; FONT-FAMILY: Verdana
+}
+DIV.customDropZone {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #c6c3de
+}

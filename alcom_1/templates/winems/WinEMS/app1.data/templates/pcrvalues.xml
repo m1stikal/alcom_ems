@@ -1,0 +1,225 @@
+<!--/** * WinEMS * Copyright (C) 2006, 2007, 2008, 2009 WinEMS *  * WinEMS is licensed under the GNU General Public License * and the Apache License, Version 2.0, as follows: * * This program is free software; you can redistribute it and/or  * modify it under the terms of the GNU General Public License * as published by the Free Software Foundation; either version 2 * of the License, or (at your option) any later version. *  * This program is distributed WITHOUT ANY WARRANTY; without even the  * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   * See the GNU General Public License for more details. *  * You should have received a copy of the GNU General Public License * along with this program; if not, write to the Free Software * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA. * * Licensed under the Apache License, Version 2.0 (the "License"); * you may not use this file except in compliance with the License. * You may obtain a copy of the License at *  * http://www.apache.org/licenses/LICENSE-2.0 *  * Unless required by applicable law or agreed to in writing, software * distributed under the License is distributed on an "AS IS" BASIS, * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. * See the License for the specific language governing permissions and * limitations under the License. */--><?xml version='1.0' encoding='ISO-8859-1'?>
+<EMSDataSet filename="{xmlfile}">
+
+<Header>
+
+	<D01>
+		<D01_01 title='EMSAgencyNumber'>{dis_AgencyNumber}</D01_01>
+		<D01_02 title='EMSAgencyName'>{dis_AgencyName}</D01_02>
+		<D01_03 title='State'></D01_03>
+		<D01_04 title='County'></D01_04>
+		<D01_07 title='DemographicStateCertificationLicensureLevels'></D01_07>
+		<D01_08 title='OrganizationalType'>5820</D01_08>
+		<D01_09 title='OrganizationStatus'>5890</D01_09>
+		<D01_10_0>
+			<D01_10 title='StatisticalYear'>2007</D01_10>
+			<D01_12 title='TotalServiceSizeArea'></D01_12>
+			<D01_13 title='TotalServiceAreaPopulation'></D01_13>
+			<D01_14 title='CallVolumeYear911'></D01_14>
+			<D01_15 title='EMSDispatchVolumeYear'></D01_15>
+			<D01_16 title='EMSTransportVolumeYear'></D01_16>
+			<D01_17 title='EMSPatientContactVolumeYear'></D01_17>
+		</D01_10_0>
+		<D01_21 title='Nationl Provider Identifier'></D01_21>
+	</D01>
+
+	<D02_04_0>
+		<D02_07 title='DemographicZip'></D02_07>
+	</D02_04_0>
+
+	<D07_02 title='StateLicensureID'></D07_02>
+
+	<D09_01 title='DeviceSerialNumber'></D09_01>
+	
+	<Record>
+		<!-- BEGIN: NON-NEMSIS DATA BEING CAPTURED (IGNORE ON IMPORT) -->
+		<PCRDATA>
+		</PCRDATA>
+		<!-- END:   NON-NEMSIS DATA BEING CAPTURED (IGNORE ON IMPORT) -->
+	
+		<E01 title='RecordInformation'>
+			<E01_01 title='PatientCareReportNumber'></E01_01>
+			<E01_02 title='SoftwareCreatedBy'>Emergency Reporting</E01_02>
+			<E01_03 title='SoftwareName'>ERS</E01_03>
+			<E01_04 title='SoftwareVersion'>3.0</E01_04>
+		</E01>
+		
+		<E02 title='UnitAgencyInformationType'>
+			<E02_01 title='EMSAgencyNumber'>{dis_AgencyNumber}</E02_01>
+			<E02_02 title='IncidentNumber'>{id}</E02_02>
+			<E02_04 title='TypeOfServiceRequested'>{emsCallType}</E02_04>
+			<E02_05 title='PrimaryRollOfTheUnit'> </E02_05>
+			<E02_06 title='TypeOfDispatchDelay'></E02_06>
+			<E02_07 title='TypeOfResponseDelay'></E02_07>
+			<E02_08 title='TypeOfSceneDelay'></E02_08>
+			<E02_09 title='TypeOfTransportDelay'></E02_09>
+			<E02_10 title='TypeOfTurnAroundDelay'></E02_10>
+			<E02_13 title='VehicleDispatchLocation'>{emsLocationCode} - {emsLocationCodeName}</E02_13>
+			<E02_14 title='ZoneNumber'></E02_14>
+			<E02_20 title='ResponseModeToScene'></E02_20>
+		</E02>
+		
+		<E03 title='UnitCallSection'>
+			<E03_01 title='ComplaintReportedByDispatch'>{emsDispatchInfo}</E03_01>
+			<E03_02 title='EMDPerformed'> 0</E03_02>
+		</E03>
+		
+		<E05 title='Times'>
+			<E05_01 title='DateTime of injury'>{emsDate}</E05_01>
+			<E05_02 title='DateTime phone rings'> </E05_02>
+			<E05_04 title='TDateTime responding unit was notified by dispatch'></E05_04>
+			<E05_05 title='DateTime unit responded'></E05_05>
+			<E05_06 title='DateTime unit arrived'></E05_06>
+			<E05_07 title='DateTime arrived at patients side'></E05_07>
+			<E05_08 title='DateTime transferred to another EMS agency'></E05_08>
+			<E05_09 title='DateTime unit left the scene'> </E05_09>
+			<E05_10 title='DateTime unit arrived with patient'></E05_10>
+			<E05_11 title='DateTime unit was back in service and available for next call'></E05_11>
+			<E05_12 title='DateTime call was cancelled'> </E05_12>
+			<E05_13 title='DateTime unit was back at home location'> </E05_13>
+		</E05>
+		
+		<E06 title='Patient'>
+			<E06_01_0>
+				<E06_01 title='LastName'>{emsLastName}</E06_01>
+				<E06_02 title='FirstName'>{emsFirstName}</E06_02>
+				<E06_03 title='MiddleInitialName'>{emsMI}</E06_03>
+			</E06_01_0>
+			<E06_04_0 title='PatientsAddress'>
+				<E06_04 title='StreetAddress'>{emsAddress}</E06_04>
+				<E06_05 title='City'>{emsCity}</E06_05>
+				<E06_07 title='State'>{emsState}</E06_07>
+				<E06_08 title='Zip'>{emsZip}</E06_08>
+			</E06_04_0>
+			<E06_09 title='Country'> </E06_09>
+			<E06_10 title='SocialSecurityNumber'>{emsSS}</E06_10>
+			<E06_11 title='Gender'>{emsGender}</E06_11>
+			<E06_12 title='Race'> </E06_12>
+			<E06_13 title='Ethnicity'> </E06_13>
+			<E06_14_0>
+				<E06_14 title='Age'></E06_14>
+				<E06_15 title='AgeUnits'></E06_15>
+			</E06_14_0>
+			<E06_16 title='DateOfBirth'>{emsDOB}</E06_16>
+			<E06_17 title='TelephoneNumber'>{emsPhone}</E06_17>
+			<E06_19_0>
+				<E06_19 title='DriversLicenseNumber'></E06_19>
+			</E06_19_0>
+		</E06>
+		
+		<E07>
+			<E07_01 title='PrimaryMethodOfPayment'>{emsPrimaryInsuranceType}</E07_01>
+			<E07_02 title='YesNoValues'>{emsCOMN}</E07_02>
+			<E07_16 title='PatientsOccupationalIndustry'></E07_16>
+			<E07_17 title='PatientsOccupation'></E07_17>
+			<E07_18_0>
+				<E07_18_1>
+					<E07_18 title='LastName of closest relative'>{emsEmergencyContact}</E07_18>
+					<E07_19 title='FirstName of closest relative'></E07_19>
+					<E07_20 title='MiddleInitialName'></E07_20>
+				</E07_18_1>
+			</E07_18_0>
+			<E07_21_0>
+				<E07_21 title='StreetAddress of patients relative'></E07_21>
+				<E07_22 title='City'></E07_22>
+				<E07_23 title='State'></E07_23>
+				<E07_24 title='Zip'></E07_24>
+			</E07_21_0>
+			<E07_25 title='TelephoneNumber'>{emsEmergencyPhone}</E07_25>
+			<E07_26 title='ClosestRelativeGuardianRelationship'></E07_26>
+			<E07_27_0>
+			<E07_27 title='Employers Name'></E07_27>
+			<E07_28_0>
+				<E07_28 title='Address of Patients employer'></E07_28>
+				<E07_29 title='City'></E07_29>
+				<E07_30 title='State'></E07_30>
+				<E07_31 title='Zip'></E07_31>
+			</E07_28_0>
+			</E07_27_0>
+				<E07_32 title='Work Phone'></E07_32>
+				<E07_33 title='Response Urgency'></E07_33>
+				<E07_34 title='CMSServiceLevel'></E07_34>
+			<E07_35_0>
+				<E07_35 title='ConditionCodenumber'>8006</E07_35>
+			</E07_35_0>
+		</E07>
+		
+		<E08 title='Scene'>
+			<E08_05 title='NumberOfPatientsAtScene'>{emsNumPatients}</E08_05>
+			<E08_06 title='YesNoValues Mass Casualty'></E08_06>
+			<E08_07 title='IncidentLocationType'>{emsLocationType}</E08_07>
+			<E08_09 title='ZoneNumber'> </E08_09>
+			<E08_11_0>
+				<E08_15 title='Zip where patient was found'></E08_15>
+			</E08_11_0>
+		</E08>
+		
+		<E09 title='Situation'>
+			<E09_01 title='PriorAid'> </E09_01>
+			<E09_02 title='PriorAidPerformedBy'></E09_02>
+			<E09_03 title='OutcomeOfPriorAid'> </E09_03>
+			<E09_04 title='YesNoValues whether there was an injury'></E09_04>
+			<E09_11 title='ComplaintAnatomicLocation'> </E09_11>
+			<E09_13 title='PrimarySymptom'> </E09_13>
+			<E09_14 title='OtherAssociatedSymptoms'> </E09_14>
+			<E09_15 title='ProvidersPrimaryImpression'> </E09_15>
+			<E09_16 title='ProvidersSecondaryImpression'> </E09_16>
+		</E09>
+		
+		<E10 title='SituationTrauma'>
+			<E10_01 title='CauseOfInjury'> </E10_01>
+			<E10_03 title='MechanismOfInjury'> </E10_03>
+			<E10_04 title='VehicularInjuryIndicators'> </E10_04>
+			<E10_05 title='AreaOfVehicleImpact'> </E10_05>
+			<E10_06_0>
+				<E10_06 title='SeatRowLocation'></E10_06>
+				<E10_07 title='PositionOfPatientInSeat'></E10_07>
+			</E10_06_0>
+			<E10_09 title='AirbagDeployment'> </E10_09>
+		</E10>
+		
+		<E11 title='SituationCPR'>
+			<E11_01 title='CardiacArrest'> </E11_01>
+			<E11_02 title='CardiacArrestEtiology'></E11_02>
+			<E11_03 title='ResucitationAttempted'></E11_03>
+			<E11_04 title='ArrestWitnessedBy'></E11_04>
+			<E11_05 title='FirstMonitoredRhythm'> </E11_05>
+			<E11_06 title='ReturnOfSpontaneousCirculation'> </E11_06>
+			<E11_10 title='ReasonCPRDiscontinued'> </E11_10>
+			<E11_11 title='CardiacRythmAtDestination'></E11_11>
+		</E11>
+		
+		<E12 title='MedicalHistory'>
+			<E12_01 title='BarriersToPatientCare'></E12_01>
+			<E12_07 title='AdvanceDirectives'></E12_07>
+			<E12_08 title='MedicationAllergies'></E12_08>
+			<E12_19 title='AlcoholDrugUseIndicators'></E12_19>
+		</E12>
+		
+		<E13>
+			<E13_01 title='RunReportNarrative'> </E13_01>
+		</E13>
+		
+		<E20>
+			<E20_02 title='DestinationTransferredToCode'></E20_02>
+			<E20_03_0>
+				<E20_03 title='StreetAddress'> </E20_03>
+				<E20_04 title='City'> </E20_04>
+				<E20_05 title='State'> </E20_05>
+			</E20_03_0>
+			<E20_14 title='TransportModeFromScene'> </E20_14>
+			<E20_16 title='ReasonForChoosingDestination'> </E20_16>
+			<E20_17 title='TypeOfDestination'> </E20_17>
+		</E20>
+		
+		<E22 title='OutcomeAndLinkage'>
+			<E22_01 title='EmergencyDepartmentDisposition'> </E22_01>
+			<E22_02 title='HospitalDisposition'></E22_02>
+			<E22_03 title='LawEnforcementCrashReportNumber'> </E22_03>
+		</E22>
+		
+	</Record>
+
+</Header>
+
+</EMSDataSet>
